@@ -12,16 +12,17 @@ You can specify the desired date range for backtesting by modifying the paramete
 
 ### Example Time Range for Testing:
 ('2024-07-01', '2024-10-13')
-|
--Console Output:
+
+### Console Output:
+
 [*********************100%***********************]  1 of 1 completed
 Starting Balance: $1000.00
 Final Balance: $1734.49
 Total Profit/Loss: $734.49
 ROI: 73.45%
-|
 
-A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
+
+# A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
 
     Action (BUY, SELL, SHORT, CLOSE SHORT)
     Amount in BTC
@@ -54,8 +55,9 @@ The backtesting component simulates trades over historical data. The process inc
 ## Result Analysis
 Below is the summary of trades executed during the specified period (from July 1, 2024, to October 13, 2024)
 
-|| Trade History:
-Action	Amount (BTC)	Price	Remaining Balance	Time	Profit/Loss
+## Trade History:
+### Action	Amount (BTC)	Price	Remaining Balance	Time	Profit/Loss
+
 SHORT	0.0003	$61415.07	$1020.00	2024-08-02 00:00:00	N/A
 SHORT	0.0003	$60680.09	$1040.40	2024-08-03 00:00:00	N/A
 SHORT	0.0004	$58116.98	$1061.21	2024-08-04 00:00:00	N/A
