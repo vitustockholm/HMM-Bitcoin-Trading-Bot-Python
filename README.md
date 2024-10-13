@@ -41,7 +41,7 @@ Console Output:
 - ROI: 73.45%
 
 
-** A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
+*A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
 - Action (BUY, SELL, SHORT, CLOSE SHORT)
 - Amount in BTC
 - Price at which the order was executed
@@ -50,7 +50,7 @@ Console Output:
 - Profit/Loss (if applicable)
 
 ## Trading Strategy
-** The trading strategy is based on Hidden Markov Models (HMM) to predict market states. The bot uses historical data to identify transitions between different market conditions, allowing it to adapt its trading strategy dynamically. The key components of the strategy include:
+* The trading strategy is based on Hidden Markov Models (HMM) to predict market states. The bot uses historical data to identify transitions between different market conditions, allowing it to adapt its trading strategy dynamically. The key components of the strategy include:
 
 *** Market States: The HMM categorizes market conditions into four states:
         - State 0 (BUY): Indicates bullish market conditions where buying is expected to yield profits.
