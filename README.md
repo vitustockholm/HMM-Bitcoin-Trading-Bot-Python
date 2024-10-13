@@ -41,7 +41,7 @@ Console Output:
 - ROI: 73.45%
 
 
-*A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
+### A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
 - Action (BUY, SELL, SHORT, CLOSE SHORT)
 - Amount in BTC
 - Price at which the order was executed
@@ -50,9 +50,9 @@ Console Output:
 - Profit/Loss (if applicable)
 
 ## Trading Strategy
-* The trading strategy is based on Hidden Markov Models (HMM) to predict market states. The bot uses historical data to identify transitions between different market conditions, allowing it to adapt its trading strategy dynamically. The key components of the strategy include:
+### The trading strategy is based on Hidden Markov Models (HMM) to predict market states. The bot uses historical data to identify transitions between different market conditions, allowing it to adapt its trading strategy dynamically. The key components of the strategy include:
 
-*** Market States: The HMM categorizes market conditions into four states:
+### Market States: The HMM categorizes market conditions into four states:
         - State 0 (BUY): Indicates bullish market conditions where buying is expected to yield profits.
         - State 1 (SELL): Indicates bearish conditions where selling may be beneficial.
         - State 2 (HOLD): Signals a neutral condition, suggesting no immediate action is necessary.
@@ -63,7 +63,7 @@ Console Output:
     Profit and Loss Calculation: The bot accurately tracks profit or loss upon executing sell or closing short orders, ensuring transparency in trading performance.
 
 ## Backtesting Methodology
-The backtesting component simulates trades over historical data. The process includes:
+### The backtesting component simulates trades over historical data. The process includes:
 
     Feature Engineering: Technical indicators are computed for historical price data.
     Model Training: The HMM model is trained using the engineered features to learn the underlying market dynamics.
@@ -76,6 +76,7 @@ Below is the summary of trades executed during the specified period (from July 1
 ## Trade History:
 ### Action	Amount (BTC)	Price	Remaining Balance	Time	Profit/Loss
 
+```
 SHORT	0.0003	$61415.07	$1020.00	2024-08-02 00:00:00	N/A
 SHORT	0.0003	$60680.09	$1040.40	2024-08-03 00:00:00	N/A
 SHORT	0.0004	$58116.98	$1061.21	2024-08-04 00:00:00	N/A
@@ -99,4 +100,4 @@ BUY	0.0002	$64178.99	$752.74	2024-08-24 00:00:00	N/A
 BUY	0.0002	$64333.54	$737.68	2024-08-25 00:00:00	N/A
 BUY	0.0002	$62880.66	$722.93	2024-08-26 00:00:00	N/A
 BUY	0.0002	$59504.00	$710.00	2024-08-27 00:00:00	N/A
-||
+```
