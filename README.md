@@ -33,13 +33,13 @@ You can specify the desired date range for backtesting by modifying the paramete
 ### Example Time Range for Testing:
 ('2024-07-01', '2024-10-13')
 
-### Console Output:
+*** Console Output:
 
-[*********************100%***********************]  1 of 1 completed
-Starting Balance: $1000.00
-Final Balance: $1734.49
-Total Profit/Loss: $734.49
-ROI: 73.45%
+- [*********************100%***********************]  1 of 1 completed
+- Starting Balance: $1000.00
+- Final Balance: $1734.49
+- Total Profit/Loss: $734.49
+- ROI: 73.45%
 
 
 - ** A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
@@ -51,13 +51,13 @@ ROI: 73.45%
 - Profit/Loss (if applicable)
 
 ## Trading Strategy
-The trading strategy is based on Hidden Markov Models (HMM) to predict market states. The bot uses historical data to identify transitions between different market conditions, allowing it to adapt its trading strategy dynamically. The key components of the strategy include:
+** The trading strategy is based on Hidden Markov Models (HMM) to predict market states. The bot uses historical data to identify transitions between different market conditions, allowing it to adapt its trading strategy dynamically. The key components of the strategy include:
 
-    Market States: The HMM categorizes market conditions into four states:
-        State 0 (BUY): Indicates bullish market conditions where buying is expected to yield profits.
-        State 1 (SELL): Indicates bearish conditions where selling may be beneficial.
-        State 2 (HOLD): Signals a neutral condition, suggesting no immediate action is necessary.
-        State 3 (SHORT): Indicates a downtrend where shorting the asset could result in profits.
+*** Market States: The HMM categorizes market conditions into four states:
+        - State 0 (BUY): Indicates bullish market conditions where buying is expected to yield profits.
+        - State 1 (SELL): Indicates bearish conditions where selling may be beneficial.
+        - State 2 (HOLD): Signals a neutral condition, suggesting no immediate action is necessary.
+        - State 3 (SHORT): Indicates a downtrend where shorting the asset could result in profits.
 
     Risk Management: The bot manages risk by limiting exposure to a predetermined percentage of the account balance (default is 2%) for each trade.
 
