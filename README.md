@@ -10,15 +10,17 @@ python main.py
 ## Customizing the Date Range
 You can specify the desired date range for backtesting by modifying the parameters in the EnhancedBitcoinHMMTradingBot class instantiation. The format should be YYYY-MM-DD.
 
-## Example Time Range for Testing:
+### Example Time Range for Testing:
 ('2024-07-01', '2024-10-13')
-
-Console Output:
+||
+--Console Output:
 [*********************100%***********************]  1 of 1 completed
 Starting Balance: $1000.00
 Final Balance: $1734.49
 Total Profit/Loss: $734.49
 ROI: 73.45%
+||
+
 A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
 
     Action (BUY, SELL, SHORT, CLOSE SHORT)
