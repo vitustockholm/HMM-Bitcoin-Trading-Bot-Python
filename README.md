@@ -33,8 +33,7 @@ You can specify the desired date range for backtesting by modifying the paramete
 ### Example Time Range for Testing:
 ('2024-07-01', '2024-10-13')
 
-*** Console Output:
-
+Console Output:
 - [*********************100%***********************]  1 of 1 completed
 - Starting Balance: $1000.00
 - Final Balance: $1734.49
@@ -42,7 +41,7 @@ You can specify the desired date range for backtesting by modifying the paramete
 - ROI: 73.45%
 
 
-- ** A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
+** A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
 - Action (BUY, SELL, SHORT, CLOSE SHORT)
 - Amount in BTC
 - Price at which the order was executed
