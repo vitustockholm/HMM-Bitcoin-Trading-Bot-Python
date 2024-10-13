@@ -1,4 +1,24 @@
 # Enchanced Bitcoin HMM Trading Bot 
+## Installation
+To set up and run the Enhanced Bitcoin HMM Trading Bot, follow these steps:
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/HMM-Bitcoin-Trading-Bot-Python.git
+    cd HMM-Bitcoin-Trading-Bot-Python
+    ```
+
+2. **Set Up a Python Environment**: It is recommended to use a virtual environment to manage dependencies.
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install Required Packages**: Install the necessary libraries using pip:
+    ```bash
+    pip install numpy pandas yfinance sklearn hmmlearn
+    ```
+
 ## Usage 
 
 To run the trading bot , execute the following command in Your terminal: 
@@ -22,14 +42,13 @@ Total Profit/Loss: $734.49
 ROI: 73.45%
 
 
-# A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
-
-    Action (BUY, SELL, SHORT, CLOSE SHORT)
-    Amount in BTC
-    Price at which the order was executed
-    Remaining balance after the trade
-    Timestamp of the trade
-    Profit/Loss (if applicable)
+- ** A text file named trade_history.txt will be created, containing a detailed record of each trade executed, including:
+- Action (BUY, SELL, SHORT, CLOSE SHORT)
+- Amount in BTC
+- Price at which the order was executed
+- Remaining balance after the trade
+- Timestamp of the trade
+- Profit/Loss (if applicable)
 
 ## Trading Strategy
 The trading strategy is based on Hidden Markov Models (HMM) to predict market states. The bot uses historical data to identify transitions between different market conditions, allowing it to adapt its trading strategy dynamically. The key components of the strategy include:
